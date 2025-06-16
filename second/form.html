@@ -1,0 +1,56 @@
+﻿
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма</title>
+</head>
+<body>
+    <h1>Форма зворотного зв'язку</h1>
+    <nav><a href="index.html">Головна</a></nav>
+
+
+    <form action="#" method="post">
+
+        <label>Ім’я: <input type="text" name="name" required></label><br><br>
+
+
+        <label>Вік: <input type="number" name="age" min="1" max="120"></label><br><br>
+
+        <label>Пароль: <input type="password" name="password"></label><br><br>
+
+
+        <p>Стать:</p>
+        <label><input type="radio" name="gender" value="чол"> Чоловік</label>
+        <label><input type="radio" name="gender" value="жін"> Жінка</label><br><br>
+
+
+        <p>Інтереси:</p>
+        <label><input type="checkbox" name="interest" value="спорт"> Спорт</label>
+        <label><input type="checkbox" name="interest" value="музика"> Музика</label>
+        <label><input type="checkbox" name="interest" value="подорожі"> Подорожі</label><br><br>
+
+
+        <label>
+            Місто:
+            <select name="city">
+                <option value="kyiv">Київ</option>
+                <option value="lviv">Львів</option>
+                <option value="kharkiv">Харків</option>
+                <option value="odesa">Одеса</option>
+                <option value="dnipro">Дніпро</option>
+            </select>
+        </label><br><br>
+
+
+        <label>
+            Коментар:
+            <textarea name="comment" rows="4" cols="40"></textarea>
+        </label><br><br>
+
+
+        <button type="submit">Надіслати</button>
+    </form>
+
+</body>
+</html>
